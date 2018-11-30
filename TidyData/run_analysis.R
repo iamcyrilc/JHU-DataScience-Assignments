@@ -114,4 +114,4 @@ allActivities.mean <- dcast(allActivities.melted, subjectId + activity ~ variabl
 
 # Setp 6
 #Write table
-write.table(allActivities.melted, "tidy_data.txt", row.names = FALSE, quote = FALSE)
+write.table(allActivities.mean, "tidy_data.txt", row.names = FALSE, quote = FALSE)
