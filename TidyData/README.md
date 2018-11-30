@@ -14,11 +14,12 @@ This is a peer reviewed assignment for Getting and Cleaning Data Coursera projec
 4. Join all training set data. Join by column bind.
 5. Join all test data. Join by column bound.
 6. Join training and test data.
-7. Assign column names to the joined data.
-8. Clean column names that are not very descriptive.
-9. Convert activity column to `factor` column.
-10. Group by subject and activity column and then find mean of each category.
-11. Write output to `tidy_data.txt`
+7. Exclude all columns that are not used in the analysis.
+8. Assign column names to the joined data.
+9. Clean column names that are not very descriptive.
+10. Convert activity column to `factor` column.
+11. Group by subject and activity column and then find mean of each category.
+12. Write output to `tidy_data.txt`
 
 ## How to run the script.
 1.Set the workspace in RStudio. 
