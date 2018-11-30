@@ -22,6 +22,8 @@ The project output data is `tidy_data.txt`. This is a space separated table. The
 ### Measurements
 All columns in the dataset are preserved but they are renamed to give meaning full names.
 
+`subjectId` and ` activity` are imported from activity and subject dataset. 
+
   [1] "subjectId"                                                
   [2] "activity"                                                 
   [3] "timeBodyAccelorometer-Mean-X"                             
