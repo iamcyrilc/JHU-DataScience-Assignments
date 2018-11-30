@@ -7,7 +7,7 @@ dataset.
 ## Source Data
 The source data is downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-See `ReadMe.md` for deatils about data processing.
+See `ReadMe,md` for deatils about data processing.
 
 ## Project output data
 
@@ -16,13 +16,11 @@ The project output data is `tidy_data.txt`. This is a space separated table. The
 ## Variables
 
 ### Identifiers
-- `subjectId` - Id of the subject
-- `activity` - Activity performed by the subject while taking measurements.
+..* `subjectId` - Id of the subject
+..* `activity` - Activity performed by the subject while taking measurements.
 
-### Measurements
+###Measurements
 All columns in the dataset are preserved but they are renamed to give meaning full names.
-
-`subjectId` and ` activity` are imported from activity and subject dataset. 
 
   [1] "subjectId"                                                
   [2] "activity"                                                 
@@ -504,15 +502,15 @@ All columns in the dataset are preserved but they are renamed to give meaning fu
 [478] "angleY,gravityMean"                                       
 [479] "angleZ,gravityMean
 
-## Activity Labels
+##Activity Labels
 These are the activities that the subject performed while taking the measurements.
 
 Note: `activity` column is converted to `factor` so that it list descriptive activity names.
 
 
-- 1 - WALKING
-- 2 - WALKING_UPSTAIRS
-- 3 - WALKING_DOWNSTAIRS
-- 4 - SITTING
-- 5 - STANDING
-- 6 - LAYING
+..*1 - WALKING
+..*2 - WALKING_UPSTAIRS
+..*3 - WALKING_DOWNSTAIRS
+..*4 - SITTING
+..*5 - STANDING
+..*6 - LAYING

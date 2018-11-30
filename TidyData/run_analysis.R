@@ -76,7 +76,12 @@ allActivities <- rbind(allTrainActivities, allTestActivities)
 
 # Setp 4
 # Add column names
-colnames(allActivities) <- c("subjectId", "activity", features[,2])
+# Since the size of final output file (tidy_data.txt) is so large, include only fields used in this test.
+
+featuresToInclude<- grep(".*Mean.*|.*Std.*", features[features,2])
+featuresToInclude.names <- features[featuresToInclude,2]
+
+colnames(allActivities) <- c("subjectId", "activity", featuresToInclude.names)
 
 # For tidyData make all column names descriptive
 # 1. Replace all starting 't' with 'time'
@@ -95,6 +100,8 @@ columns <- gsub("Freq", "Frequency",columns)
 columns <- gsub("mean", "Mean",columns)
 columns <- gsub("-std", "Std",columns)
 columns <- gsub("[()]", "",columns)
+
+
 
 colnames(allActivities) <- columns
 

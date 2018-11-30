@@ -21,7 +21,7 @@ This is a peer reviewed assignment for Getting and Cleaning Data Coursera projec
 11. Write output to `tidy_data.txt`
 
 ## How to run the script.
-1. Set the workspace in RStudio.
+1.Set the workspace in RStudio. 
 2. Load the script into RStudio.
 3. Run the script.
 4. After successfully executing the script `tidy_data.txt` will be created in the workspace.
